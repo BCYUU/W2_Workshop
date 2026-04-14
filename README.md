@@ -3,5 +3,5 @@ Plan B Members:
   Alexus Chanthadara
   Blake Collins
   Daniel Baptiste
-  Luis Ocelotllopez
+  Luis Ocelotl Lopez
 
