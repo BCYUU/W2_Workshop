@@ -1,2 +1,7 @@
 # W2_Workshop
-Plan B
+Plan B Members:
+  Alexus Chanthadara
+  Blake Collins
+  Daniel Baptiste
+  Luis Ocelotllopez
+
