@@ -8,9 +8,9 @@ CUSTOMER
 
 \- contact\_info
 
-\- dog\_id ❌
+\- dog\_id 
 
-\- frequency ❌
+\- frequency 
 
 
 
@@ -22,7 +22,7 @@ DOG
 
 \- customer\_id (FK)
 
-\- frequency ❌
+\- frequency 
 
 
 
@@ -32,7 +32,7 @@ PAYMENT\_INFO
 
 \- payment\_type
 
-\- frequency ❌
+\- frequency 
 
 \- amount
 
