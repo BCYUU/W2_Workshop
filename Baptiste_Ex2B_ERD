@@ -1,0 +1,33 @@
+CUSTOMER
+
+\- customer\_id (PK)
+
+\- first\_name
+
+\- last\_name
+
+\- contact\_information
+
+\- dog\_breed
+
+\- address\_information 
+
+DOG 
+
+\- dog\_breed (PK)
+
+\- customer\_id (FK)
+
+\- service\_type
+
+\- dog\_name
+
+PAYMENT 
+
+\- dog\_breed
+
+\- dog\_name
+
+\_first\_name
+
+\_last\_name
