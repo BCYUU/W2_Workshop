@@ -8,7 +8,7 @@ CUSTOMER
 
 \- contact\_info
 
-\- dog\_id 
+\- dog\_id ❌
 
 \- frequency 
 
@@ -22,7 +22,7 @@ DOG
 
 \- customer\_id (FK)
 
-\- frequency 
+\- frequency ❌
 
 
 
@@ -32,7 +32,7 @@ PAYMENT\_INFO
 
 \- payment\_type
 
-\- frequency 
+\- frequency ❌
 
 \- amount
 
@@ -90,13 +90,13 @@ CUSTOMER
 
 
 
-\* customer\_id (PK)
+&#x20;customer\_id (PK)
 
-\* first\_name
+&#x20;first\_name
 
-\* last\_name
+last\_name
 
-\* contact\_info
+contact\_info
 
 
 
@@ -108,11 +108,11 @@ DOG
 
 
 
-\* dog\_id (PK)
+dog\_id (PK)
 
-\* dog\_name
+dog\_name
 
-\* customer\_id (FK → CUSTOMER.customer\_id)
+customer\_id (FK → CUSTOMER.customer\_id)
 
 
 
@@ -122,11 +122,11 @@ SERVICE
 
 
 
-\* service\_id (PK)
+service\_id (PK)
 
-\* service\_name
+service\_name
 
-\* price
+price
 
 
 
@@ -138,15 +138,15 @@ APPOINTMENT
 
 
 
-\* appointment\_id (PK)
+appointment\_id (PK)
 
-\* dog\_id (FK → DOG.dog\_id)
+dog\_id (FK → DOG.dog\_id)
 
-\* service\_id (FK → SERVICE.service\_id)
+service\_id (FK → SERVICE.service\_id)
 
-\* date
+date
 
-\* frequency
+frequency
 
 
 
@@ -158,37 +158,19 @@ PAYMENT
 
 
 
-\* payment\_id (PK)
+payment\_id (PK)
 
-\* customer\_id (FK → CUSTOMER.customer\_id)
+customer\_id (FK → CUSTOMER.customer\_id)
 
-\* amount
+amount
 
-\* payment\_type
+payment\_type
 
-\* date
-
-
+date
 
 
 
-\---
 
-
-
-\### \*\*NOTES\*\*
-
-
-
-\* The \*\*APPOINTMENT\*\* table resolves the many-to-many relationship between DOG and SERVICE.
-
-\* A dog can have many services, and a service can apply to many dogs.
-
-\* Additional details like date and frequency are stored in APPOINTMENT because they describe the interaction between DOG and SERVICE.
-
-
-
-\---
 
 
 
