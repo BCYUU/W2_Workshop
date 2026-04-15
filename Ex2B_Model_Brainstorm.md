@@ -15,4 +15,4 @@ payment_info:customer_id,payment_type,frequency,amount
 c) What entities will have relationships to each other? That is, what information will
 need to be reassembled together when data is retrieved from the database? The main entities that we will have in connection between all tables will be customer_id,dog_id. Reason being they will be listed as primary keys in each table and for future joins we will be able to easily link they by those entities.
 d) Can you identify any possible many-to-many relationships between your tables
-that will need to a resolving table? Based off the table and columns we applied per tables, not true mant to mant relationships exist.But the further we get into project questions will rise as in "can a dog have multiple services". Then we would introduce a new table "dog_services" ex, dog_id,service_id,date,price
+that will need to a resolving table? Based off the table and columns we applied per tables, not true many to manyrelationships exist.But the further we get into project questions will rise as in "can a dog have multiple services". Then we would introduce a new table "dog_services" ex, dog_id,service_id,date,price
