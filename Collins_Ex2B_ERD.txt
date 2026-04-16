@@ -1,0 +1,47 @@
+Here is the erDiagram after consulting with my group members I learned I missed the dog walking part (since most of us had already gone ahead) but you might find that funny so here you go.
+
+erDiagram
+    AGENTS {
+        int agent_id PK
+        varchar first_name
+        varchar last_name
+        varchar badge_number
+        varchar clearance_level
+        date assignment_date
+        varchar status
+    }
+
+    SIGHTINGS {
+        int sighting_id PK
+        varchar location
+        date sighting_date
+        time sighting_time
+        text description
+        varchar evidence_level
+        decimal latitude
+        decimal longitude
+    }
+
+    SUSPECTED_SKINWALKERS {
+        int suspect_id PK
+        varchar current_alias
+        varchar last_known_location
+        int threat_level
+        date first_detected_date
+        varchar status
+        int shapeshift_count
+    }
+
+    INVESTIGATIONS {
+        int investigation_id PK
+        int agent_id FK
+        int sighting_id FK
+        int suspect_id FK
+        date investigation_date
+        text findings
+        varchar resolution_status
+    }
+
+    AGENTS ||--o{ INVESTIGATIONS : "leads"
+    SIGHTINGS ||--o{ INVESTIGATIONS : "linked_to"
+    SUSPECTED_SKINWALKERS ||--o{ INVESTIGATIONS : "involves"
